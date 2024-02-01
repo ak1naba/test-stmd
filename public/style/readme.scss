@@ -1,0 +1,19 @@
+@import "variables";
+
+.readme{
+  padding: $medium-vertical-pad $none-pad;
+  display: flex;
+  flex-direction: column;
+  gap: $medium-vertical-pad;
+
+  &-parts{
+    display: flex;
+    flex-direction: column;
+    gap: $medium-vertical-pad;
+    .part{
+      display: flex;
+      flex-direction: column;
+      gap: $small-vertical-pad;
+    }
+  }
+}

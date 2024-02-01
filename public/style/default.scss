@@ -1,0 +1,67 @@
+// Файл обнуляет стандартные значения
+
+@import "variables";
+
+// Стандраная настройка всех элементов
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // Обнуление псевдоэлементов
+  &:after, &:before{
+    box-sizing: inherit;
+  }
+  // Текст
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+// Обнуление стилей ссылок
+a{
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  // Обнуление подклассов ссылки
+  &:visited, &:link{
+    font-family: inherit;
+  }
+}
+// Обнуление стилей заголовков
+h1, h2, h3, h4, h5, h6{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+
+/*-------------------Повторно используемые классы---------------------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1921px) {
+    width: 1920px;
+
+  }
+}
+.title{
+  font-size: 24px;
+  font-weight: 600;
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
+}
+.title-secondary{
+  font-size: 20px;
+  font-weight: 600;
+  @media screen and (max-width: 768px){
+    font-size: 16px;
+  }
+}
+.hidden-overflow{
+  overflow: hidden;
+}
+.link-text{
+  color: $blue-link;
+  font-weight: 600;
+}

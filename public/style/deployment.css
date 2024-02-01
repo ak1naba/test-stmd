@@ -1,0 +1,29 @@
+.deployment {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.deployment .modules {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.deployment .modules .module {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.deployment .modules .module .img-w100p {
+  width: 100%;
+}
+.deployment .modules .module .img-wauto {
+  width: auto;
+}
+.deployment .modules .module ol li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=deployment.css.map */

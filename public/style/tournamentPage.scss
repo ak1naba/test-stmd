@@ -1,0 +1,35 @@
+// Импорт переменных
+@import "variables";
+
+.tournament{
+  height: 100%;
+  padding: $medium-vertical-pad $none-pad;
+  display: flex;
+  flex-direction: column;
+  gap: $medium-vertical-pad;
+
+
+  &-table{
+    width: 100%;
+    border-collapse: collapse;
+    th, td{
+      margin: 0;
+      padding: $small-vertical-pad $small-horizontal-pad;
+      border: 1px solid $black-border;
+    }
+    thead{
+      color: $black-text;
+      background-color: $gray-background;
+    }
+    &__wrapper{
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+}
+.sorting{
+  cursor: pointer;
+}
+.sorted{
+  background-color: $accent-color;
+}

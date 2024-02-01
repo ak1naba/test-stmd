@@ -1,0 +1,14 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.not-found__title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=404.css.map */

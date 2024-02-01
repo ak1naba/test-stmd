@@ -1,0 +1,18 @@
+.readme {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.readme-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.readme-parts .part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=readme.md.css.map */

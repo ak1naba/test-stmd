@@ -1,0 +1,33 @@
+@import "variables";
+
+.deployment{
+  padding: $medium-vertical-pad $none-pad;
+  display: flex;
+  flex-direction: column;
+  gap: $large-vertical-pad;
+  .modules{
+    display: flex;
+    flex-direction: column;
+    gap: $medium-vertical-pad;
+    .module{
+      display: flex;
+      flex-direction: column;
+      gap: $medium-vertical-pad;
+
+      .img-w100p{
+        width: 100%;
+      }
+      .img-wauto{
+        width: auto;
+      }
+
+      ol{
+        li{
+          display: flex;
+          flex-direction: column;
+          gap: $small-vertical-pad;
+        }
+      }
+    }
+  }
+}
