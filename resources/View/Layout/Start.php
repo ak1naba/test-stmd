@@ -33,7 +33,7 @@
             <div class="header-nav ">
                 <a href="/" class="header-link">Главная</a>
                 <a href="/deployment" class="header-link">Развертывание</a>
-                <a href="/readme.md" class="header-link">Read Me</a>
+                <a href="/readme" class="header-link">Read Me</a>
 
             </div>
         </div>

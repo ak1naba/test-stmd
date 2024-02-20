@@ -24,6 +24,16 @@ class SiteController extends Controller
     public function readme()
     {
         // Образаемся к viewer, передаем путь к шаблоеу и данны, в данном случае ничего
-        return Viewer::view('Site.readme.md', null);
+        return Viewer::view('Site.readme', null);
+    }
+
+    public function testGetParams($param1, $param2)
+    {
+        echo $param1;
+        echo $param2;
+
+        echo "<pre>";
+        echo var_dump($_GET);
+        echo "</pre>";
     }
 }

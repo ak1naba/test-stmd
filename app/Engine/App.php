@@ -43,8 +43,11 @@ class App
                         // Если элемнт массива текущего uri удовлетворяет руглярному выржению, тогда выполняем дейтсвие
                         if(preg_match("/^$patternArray[$i]$/",$requestArray[$i])){
                             // В массив параметров добавлем элемент по ключу полеченному из массива конфигурации,
-                            // предвартиельно убираем {}, и присваиваем значение текущего uti
-                            $paramsArray[trim($routeArray[$i], '{}')] = $requestArray[$i];
+                            // предвартиельно убираем {}, и присваиваем значение текущего uri
+
+                            $arrayParams = explode('?',$requestArray[$i]);
+
+                            $paramsArray[trim($routeArray[$i], '{}')] = $arrayParams[0];
                         }
                     }
                 }
